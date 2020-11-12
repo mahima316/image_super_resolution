@@ -80,7 +80,9 @@ def model():
     SRCNN.compile(optimizer=adam, loss='mean_squared_error', metrics=['mean_squared_error'])
     
     return SRCNN
-    
+
+# Used pre-trained weights from https://github.com/MarkPrecursor/SRCNN-keras in 3051crop_weight_200.h5 file  
+                          
 # Deploying the SRCNN
 def modcrop(img, scale):
     tmpsz = img.shape
